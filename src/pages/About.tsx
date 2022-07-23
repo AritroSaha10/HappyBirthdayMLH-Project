@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"
 
 const AboutCard = ({ name, img, description }: { name: string, img: string, description: string }) => (
     <div className="flex flex-col items-center p-10 bg-gradient-to-r from-sky-500 to-blue-500 rounded-3xl">
@@ -15,7 +16,10 @@ const AboutCard = ({ name, img, description }: { name: string, img: string, desc
 );
 
 const AboutPage: React.FC = () => (
-    <div>
+    <motion.div
+        initial={{}}
+        animate={{}}
+        exit={{}}>
         <h1 className="text-4xl font-bold text-black text-center mt-8 mb-4">
             What is this?
         </h1>
@@ -52,7 +56,7 @@ const AboutPage: React.FC = () => (
                 description="Hey there! My name is Sophie, I'm in the 11th grade studying at John Fraser Secondary School and I have a soft spot for MLH :)"
             />
         </div>
-    </div>
+    </motion.div>
 );
 
 export default AboutPage;

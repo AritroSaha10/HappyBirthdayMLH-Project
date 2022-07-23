@@ -1,9 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import Editor from 'react-simple-code-editor';
-import Prism from 'prismjs'
-import 'prismjs/components/prism-clike';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/themes/prism.css'; //Example style, you can use another
+import React, { useCallback, useEffect, useRef } from 'react';
+import CodeMirror from '@uiw/react-codemirror';
+import { html } from '@codemirror/lang-html'
 
 import { compare } from '../util/compareImage';
 
@@ -11,7 +8,7 @@ const squareDimension = 500;
 
 const WebDev: React.FC = () => {
     const [code, setCode] = React.useState(
-        `<div />wow<style></style>`
+        `<div /> Start Typing ...<style></style>`
     );
 
     const [difference, setDifference] = React.useState(0)
@@ -38,7 +35,7 @@ const WebDev: React.FC = () => {
                 </svg>
             `);
 
-    const renderUserCode = () => {
+    const renderUserCode = useCallback(() => {
         if (imageRef && imageRef.current) {
             const src1 = 'data:image/svg+xml,' + encodeURIComponent(`
                 <svg xmlns="http://www.w3.org/2000/svg" width="${squareDimension}" height="${squareDimension}">
@@ -57,42 +54,43 @@ const WebDev: React.FC = () => {
 
             imageRef.current.src = src1;
         }
-    }
+    }, [code, referenceImage])
 
     useEffect(() => {
         renderUserCode()
-    }, [code]);
+    }, [code, renderUserCode]);
 
     return (
-        <div className='flex flex-col gap-4 p-4 items-center'>
-            <div className='flex gap-4 w-full justify-between'>
-                <div className='w-2/3 border-2 border-gray-500 code-area'>
-                    <Editor
-                        value={code}
-                        onValueChange={code => setCode(code)}
-                        highlight={code => Prism.highlight(code, Prism.languages.html, "html")}
-                        padding={14}
-                        style={{
-                            fontFamily: '"Fira code", "Fira Mono", monospace',
-                            fontSize: 14,
-                        }}
-                    />
-                </div>
-
-                <div className='flex gap-2'>
-                    <div className='flex flex-col'>
-                        <img className='w-full aspect-square border-2 border-gray-500' ref={imageRef} src={emptyImg} alt='img' />
-                        <p>Your image</p>
-                    </div>
-
-                    <div className='flex flex-col'>
-                        <img className='w-full aspect-square border-2 border-gray-500' src={referenceImage} alt='img' />
-                        <p>Reference image</p>
-                    </div>
-                </div>
+        <div className='flex flex-row gap-4 items-center p-4 bg-slate-800'>
+            <div className='w-full border-2 border-gray-500 code-area h-full'>
+                <CodeMirror
+                    value={code}
+                    height="89vh"
+                    extensions={[html({ matchClosingTags: true, autoCloseTags: true })]}
+                    onChange={setCode}
+                />
             </div>
 
-            <p>Score: {Math.round((10000 - difference * 100) / 100)}%</p>
+            <div className='flex gap-4 w-full justify-between'>
+                <div className='flex flex-col gap-4 justify-between w-1/2'>
+                    <img className='aspect-square border-2 border-gray-500 bg-white' ref={imageRef} src={emptyImg} alt='img' />
+
+                    <img className='aspect-square border-2 border-gray-500' src={referenceImage} alt='img' />
+                </div>
+
+                <div className='flex flex-col gap-4 justify-between w-1/2 '>
+                    <div className='flex flex-col aspect-square p-4 w-full bg-blue-900 rounded-xl justify-center'>
+                        <h3 className='text-2xl text-gray-300 justify-self-start self-start'>Accuracy</h3>
+                        <h1 className='text-4xl text-white self-center '>91%</h1>
+                    </div>
+                    <div className=' font-bold text-center bg-gradient-to-r from-blue-800/[.7] to-blue-400/[.7] mt-10 shadow-2xl rounded-xl'>
+                    <button> Next </button>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     );
 }

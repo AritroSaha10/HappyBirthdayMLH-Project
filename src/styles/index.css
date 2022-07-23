@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.code-area textarea {
+.code-area div {
   @apply outline-none border-none;
 }
