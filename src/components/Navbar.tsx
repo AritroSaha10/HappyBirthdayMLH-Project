@@ -5,7 +5,8 @@ import { useState } from "react";
 import { GoThreeBars } from "react-icons/go"
 
 import {
-    Link
+    Link,
+    useLocation
 } from "react-router-dom";
 
 const links = [
@@ -27,6 +28,12 @@ const links = [
         id: "algorithms",
         priority: false
     },
+    {
+        name: "About",
+        link: "/about",
+        id: "about",
+        priority: false
+    },
     /*
     {
         name: "Sign Up",
@@ -39,6 +46,9 @@ const links = [
 
 const Header: React.FC = () => {
     const [showDropdown, setShowDropdown] = useState(false);
+    const { pathname } = useLocation();
+
+    console.log(links.map(({ link }) => link === pathname))
 
     return (
         <header className="bg-blue-900 py-2 lg:py-4 sticky z-[99999999]">
@@ -65,7 +75,7 @@ const Header: React.FC = () => {
                 <div className={`${showDropdown ? "flex" : "hidden"} lg:flex flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0`} data-test-id="navbar">
                     {
                         links.map(({ name, link, priority, id }) =>
-                            <Link key={name} className={`${priority ? "text-purple-300 hover:bg-purple-900 hover:text-white text-center border border-solid border-purple-900 mt-1 lg:mt-0 lg:ml-1" : "text-gray-300 hover:bg-gray-200/25 hover:text-white"} p-2 lg:px-4 lg:mx-2 rounded duration-300 transition-colors`} to={link}>
+                            <Link key={name} className={`${priority ? "text-purple-300 hover:bg-purple-900 hover:text-white text-center border border-solid border-purple-900 mt-1 lg:mt-0 lg:ml-1" : "text-gray-300 hover:bg-gray-200/25 hover:text-white"} p-2 lg:px-4 lg:mx-2 rounded duration-300 transition-colors ${pathname === name && "font-bold"}`} to={link}>
                                 {name}
                             </Link>
                         )

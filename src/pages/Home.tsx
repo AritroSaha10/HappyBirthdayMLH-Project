@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            <HomeSection title="Web-Dev" subheading="Test ur CSS LIMITS" description="A very good description" image="/images/bg.png" reversed={false} buttonLabel="Try it Out" buttonLink="/web-dev"/>
+            <HomeSection title="Web-Dev" subheading="Test your CSS LIMITS" description="A very good description" image="/images/bg.png" reversed={false} buttonLabel="Try it Out" buttonLink="/web-dev" animate-fade/>
             <HomeSection title="Algorithms" subheading="An interesting subheading" description="A very good description" image="/images/bg.png" reversed={true} buttonLabel="Try it Out!" buttonLink="/algorithms" />
 
             <Footer />
