@@ -45,7 +45,7 @@ const AboutPage: React.FC = () => (
             <AboutCard
                 name="Aritro Saha"
                 img="/images/charamander.png"
-                description="Hi! I'm Aritro. I'm in Grade 11, and I love birds!"
+                description="Hi! I'm Aritro. I'm in Grade 11, and I love racoons!"
             />
             <AboutCard
                 name="Stephen Ni"

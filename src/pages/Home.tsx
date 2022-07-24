@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         >
             <div className="flex flex-col h-[80vh] relative mb-12">
                 <div className="w-full overflow-hidden" style={{ boxShadow: "inset 0 0 200px #000000" }}>
-                    <img src="/images/bg.png" className="w-screen h-[80vh] absolute object-cover object-center blur-sm bg-black scale-110" alt='' />
+                    <img src="/HappyBirthdayMLH-Project/images/bg.png" className="w-screen h-[80vh] absolute object-cover object-center blur-sm bg-black scale-110" alt='' />
                 </div>
 
                 <div className="absolute bg-black/60 h-[84.5vh] w-screen z-3" />
@@ -56,8 +56,8 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            <HomeSection title="Web-Dev" subheading="Test your CSS limits" description="Recreate a randomly generated picture with HTML and CSS!" image="/images/bg.png" reversed={false} buttonLabel="Try it Out!" animate-fade-in-down buttonLink="/web-dev" />
-            <HomeSection title="Algorithms" subheading="Practice competitive programming questions!" description="Create logical solutions using Javascript" image="/images/bg.png" reversed={true} buttonLabel="Try it Out!" buttonLink="/algorithms" animate-fade-in-down />
+            <HomeSection title="Web-Dev" subheading="Test your CSS limits" description="Recreate a randomly generated picture with HTML and CSS!" image="/HappyBirthdayMLH-Project/images/bg.png" reversed={false} buttonLabel="Try it Out!" animate-fade-in-down buttonLink="/web-dev" />
+            <HomeSection title="Algorithms" subheading="Practice competitive programming questions!" description="Create logical solutions using Javascript" image="/HappyBirthdayMLH-Project/images/bg.png" reversed={true} buttonLabel="Try it Out!" buttonLink="/algorithms" animate-fade-in-down />
 
             <Footer />
         </motion.div>

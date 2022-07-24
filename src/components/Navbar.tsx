@@ -12,25 +12,25 @@ import {
 const links = [
     {
         name: "Home",
-        link: "/",
+        link: "/HappyBirthdayMLH-Project",
         id: "home",
         priority: false
     },
     {
         name: "Web Dev",
-        link: "/web-dev",
+        link: "/HappyBirthdayMLH-Project/web-dev",
         id: "web-dev",
         priority: false
     },
     {
         name: "Algorithms",
-        link: "/algorithms",
+        link: "/HappyBirthdayMLH-Project/algorithms",
         id: "algorithms",
         priority: false
     },
     {
         name: "About",
-        link: "/about",
+        link: "/HappyBirthdayMLH-Project/about",
         id: "about",
         priority: false
     },

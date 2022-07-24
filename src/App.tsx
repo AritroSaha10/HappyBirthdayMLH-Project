@@ -22,10 +22,10 @@ const App: React.FC = () => (
         
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/web-dev" element={<WebDev />} />
-            <Route path="/algorithms" element={<Algorithms />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/HappyBirthdayMLH-Project" element={<Home />} />
+            <Route path="/HappyBirthdayMLH-Project/web-dev" element={<WebDev />} />
+            <Route path="/HappyBirthdayMLH-Project/algorithms" element={<Algorithms />} />
+            <Route path="/HappyBirthdayMLH-Project/about" element={<About />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </Suspense>
