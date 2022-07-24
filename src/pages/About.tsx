@@ -44,17 +44,17 @@ const AboutPage: React.FC = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full px-8 gap-8 lg:gap-16">
             <AboutCard
                 name="Aritro Saha"
-                img="/images/charamander.png"
+                img="/HappyBirthdayMLH-Project/images/charamander.png"
                 description="Hi! I'm Aritro. I'm in Grade 11, and I love racoons!"
             />
             <AboutCard
                 name="Stephen Ni"
-                img="/images/panch.webp"
+                img="/HappyBirthdayMLH-Project/images/panch.webp"
                 description="Hey there! My name is Stephen, I'm in the 12th grade. I LOVE turtles and learning more about code!"
             />
             <AboutCard
                 name="Sophie Yang"
-                img="/images/snorlax.png"
+                img="/HappyBirthdayMLH-Project/images/snorlax.png"
                 description="Yo, my name is Sophie, I'm in grade 11, and I love ducks. :)"
             />
         </div>
