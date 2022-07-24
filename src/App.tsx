@@ -16,19 +16,21 @@ const About = lazy(() => import("./pages/About"))
 
 const App: React.FC = () => (
   <AnimatePresence exitBeforeEnter>
-    <BrowserRouter>
-      <Navbar />
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/web-dev" element={<WebDev />} />
-          <Route path="/algorithms" element={<Algorithms />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Page404 />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+    <div className="flex flex-col min-h-screen">
+      <BrowserRouter>
+        <Navbar />
+        
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/web-dev" element={<WebDev />} />
+            <Route path="/algorithms" element={<Algorithms />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Page404 />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </div>
   </AnimatePresence>
 );
 export default App;

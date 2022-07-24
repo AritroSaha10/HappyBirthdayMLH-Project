@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const Home: React.FC = () => {
     return (
-        <motion.div className="overflow-hidden"
+        <motion.div className="overflow-hidden bg-slate-800 flex-grow"
             initial={{
                 opacity: 0,
             }}
@@ -19,22 +19,20 @@ const Home: React.FC = () => {
                 opacity: 0,
             }}
         >
-            <div className="flex flex-col h-screen relative">
+            <div className="flex flex-col h-[80vh] relative mb-12">
                 <div className="w-full overflow-hidden" style={{ boxShadow: "inset 0 0 200px #000000" }}>
                     <img src="/images/bg.png" className="w-screen h-[80vh] absolute object-cover object-center blur-sm bg-black scale-110" alt='' />
                 </div>
 
-                <div className="absolute h-screen w-full">
+                <div className="absolute bg-black/60 h-[84.5vh] w-screen z-3" />
+
+                <div className="absolute h-[90vh] w-full">
 
                     <div className="flex flex-col justify-center items-center h-full">
-                        <h1 className="text-6xl w-2/5 p-5 bg-blue-900/[.4] text-white text-center">
-                            Name
+                        <h1 className="font-mono text-6xl w-3/5 p-5 text-white bold text-center">
+                            Welcome to CodeBro.
                         </h1>
 
-
-                        <button className="w-56 text-4xl text-white mt-10 rounded-3xl p-5 bg-gradient-to-r from-blue-1000/[.7] to-blue-400/[.7] shadow-2xl">
-                            Learn More
-                        </button>
 
                     </div>
                 </div>

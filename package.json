@@ -17,6 +17,7 @@
     "@uiw/react-textarea-code-editor": "^2.0.3",
     "codemirror": "^6.0.1",
     "framer-motion": "^6.5.1",
+    "party-js": "^2.2.0",
     "prismjs": "^1.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

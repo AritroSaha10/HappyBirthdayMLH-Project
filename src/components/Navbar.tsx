@@ -51,12 +51,12 @@ const Header: React.FC = () => {
     console.log(links.map(({ link }) => link === pathname))
 
     return (
-        <header className="bg-blue-900 py-2 lg:py-4 sticky z-[99999999]">
+        <header className="flex flex-col justify-center bg-blue-900 sticky z-[99999999] min-h-[7vh] py-2 lg:py-4">
             <div className="container px-4 mx-auto lg:flex lg:items-center">
                 <div className="flex justify-between items-center">
                     <Link className="flex flex-row items-center gap-4 font-bold text-xl text-teal" to="/">
                         {/* <img src="" alt="Logo" width={29} height={42} /> */}
-                        <h2 className="text-2xl text-white">Project Name</h2>
+                        <h2 className="text-2xl text-white font-mono">CodeBro</h2>
                     </Link>
 
                     <button

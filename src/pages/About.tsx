@@ -16,44 +16,46 @@ const AboutCard = ({ name, img, description }: { name: string, img: string, desc
 );
 
 const AboutPage: React.FC = () => (
-    <motion.div
-        initial={{}}
-        animate={{}}
-        exit={{}}>
-        <h1 className="text-4xl font-bold text-black text-center mt-8 mb-4">
-            What is this?
+    <motion.div className='w-full h-full bg-slate-800 flex-grow'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.5 } }}
+        exit={{ opacity: 0, transition: { duration: 0.5 } }}>
+
+        <h1 className="text-4xl font-bold text-gray-100 text-center mt-8 mb-4">
+            What is CodeBro?
         </h1>
 
-        <p className="text-2xl text-center text-gray-700">
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        <p className="text-2xl text-center text-gray-200">
+            CodeBro is an offline programming suite that allows users to practice both their web design and competitive problem-solving skills.
         </p>
 
-        <h1 className="text-4xl font-bold text-black text-center mt-8 mb-4">
+        <h1 className="text-4xl font-bold text-gray-100 text-center mt-8 mb-4">
             Why?
         </h1>
 
-        <p className="text-xl px-8 lg:px-16 xl:px-32 text-center text-gray-700">
-            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        <p className="text-xl px-8 lg:px-16 xl:px-32 text-center text-gray-300">
+            Learning code can, well, be kinda boring. Not everyone learns efficiently through 10-hour tutorials or endless documentation sites, 
+            thus our idea partly stemmed from a shared struggle that there is a lack of variety when it comes to learning and practicing code.
         </p>
 
-        <h1 className="text-4xl font-bold text-black text-center my-8">
-            About Us
+        <h1 className="text-4xl font-bold text-white text-center my-8">
+            Meet the Team
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full px-8 gap-8 lg:gap-16">
             <AboutCard
                 name="Aritro Saha"
-                img="/images/bulb.jpeg"
-                description="Hi! I'm Aritro. I'm in Grade 11, and I enjoy biking during the summer!"
+                img="/images/charamander.png"
+                description="Hi! I'm Aritro. I'm in Grade 11, and I love birds!"
             />
             <AboutCard
                 name="Stephen Ni"
                 img="/images/panch.webp"
-                description="Hey there! My name is Stephen, I'm in the 112"
+                description="Hey there! My name is Stephen, I'm in the 12th grade. I LOVE turtles and learning more about code!"
             />
             <AboutCard
                 name="Sophie Yang"
-                img="/images/panch.webp"
-                description="Hey there! My name is Sophie, I'm in the 11th grade studying at John Fraser Secondary School and I have a soft spot for MLH :)"
+                img="/images/snorlax.png"
+                description="Yo, my name is Sophie, I'm in grade 11, and I love ducks. :)"
             />
         </div>
     </motion.div>
