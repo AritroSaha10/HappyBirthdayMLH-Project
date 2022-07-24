@@ -1,10 +1,10 @@
 <p align="center">
-    <img alt="MYAC" src="https://media.discordapp.net/attachments/1000155185357795401/1000633854467506216/unknown.png" width="200" />
+    <img alt="Image" src="https://media.discordapp.net/attachments/1000155185357795401/1000633854467506216/unknown.png" width="200" />
 </p>
 <h1 align="center">
   CodeBro: Hacky Birthday MLH 2022
 </h1>
-CodeBro is an offline programming suite that allows users to practice both their web design and competitive problem-solving skills. 
+CodeBro is an offline programming suite that allows users to practice both their web design and competitive problem-solving skills. This won [Most Creative Use of GitHub](https://devpost.com/software/codebro)!
 
 ## 💡 Inspiration
 Imagine this: You’re on a road trip, and being the code monkey you are, you seem to hate every minute of it being offline and away from your code. While we’re somewhat kidding and would strongly urge you to enjoy your trip, we understand that the best way to improve in coding is to practice, and what better platform to practice on that than a platform that works offline? From the get-go, we recognized that there are several problems for coders, especially if they are just starting out:
