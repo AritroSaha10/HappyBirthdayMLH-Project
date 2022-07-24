@@ -56,8 +56,8 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-            <HomeSection title="Web-Dev" subheading="Test your CSS limits" description="Recreate a randomly generated picture with HTML and CSS!" image="/HappyBirthdayMLH-Project/images/web-dev-pic.png" reversed={false} buttonLabel="Try it Out!" animate-fade-in-down buttonLink="/web-dev" />
-            <HomeSection title="Algorithms" subheading="Practice competitive programming questions!" description="Create logical solutions using Javascript" image="/HappyBirthdayMLH-Project/images/comp-prog-2.png" reversed={true} buttonLabel="Try it Out!" buttonLink="/algorithms" animate-fade-in-down />
+            <HomeSection title="Web-Dev" subheading="Test your CSS limits" description="Recreate a randomly generated picture with HTML and CSS!" image="/HappyBirthdayMLH-Project/images/web-dev-pic.png" reversed={false} buttonLabel="Try it Out!" animate-fade-in-down buttonLink="/HappyBirthdayMLH-Project/web-dev" />
+            <HomeSection title="Algorithms" subheading="Practice competitive programming questions!" description="Create logical solutions using Javascript" image="/HappyBirthdayMLH-Project/images/comp-prog-2.png" reversed={true} buttonLabel="Try it Out!" buttonLink="/HappyBirthdayMLH-Project/algorithms" animate-fade-in-down />
 
             <Footer />
         </motion.div>
