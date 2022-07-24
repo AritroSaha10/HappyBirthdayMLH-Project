@@ -364,7 +364,7 @@ const WebDev: React.FC = () => {
             </div>
 
             <div className='flex gap-4 justify-center'>
-                <button ref={btnRef} className='px-6 py-2 bg-gradient-to-r from-blue-800/70 to-blue-400/70 rounded-lg font-semibold text-white' onClick={() => {
+                <button ref={btnRef} className='px-6 py-3 bg-gradient-to-r from-blue-800/70 to-blue-400/70 rounded-lg font-semibold text-white' onClick={() => {
                     if (difference === 0) {
                         if (levelIdx === levels.length - 1) {
                             alert("🎉 You've gone through all of our levels, congrats!")
