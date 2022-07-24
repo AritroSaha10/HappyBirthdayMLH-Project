@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/HappyBirthdayMLH-Project/static/css/main.74af1574.css",
-    "main.js": "/HappyBirthdayMLH-Project/static/js/main.b6594009.js",
-    "static/js/90.2468b4f7.chunk.js": "/HappyBirthdayMLH-Project/static/js/90.2468b4f7.chunk.js",
+    "main.js": "/HappyBirthdayMLH-Project/static/js/main.e4d2f963.js",
+    "static/js/90.6a306b0b.chunk.js": "/HappyBirthdayMLH-Project/static/js/90.6a306b0b.chunk.js",
     "static/js/453.5b2cf8ed.chunk.js": "/HappyBirthdayMLH-Project/static/js/453.5b2cf8ed.chunk.js",
     "static/js/625.6a5c65a2.chunk.js": "/HappyBirthdayMLH-Project/static/js/625.6a5c65a2.chunk.js",
     "static/js/754.d0face4b.chunk.js": "/HappyBirthdayMLH-Project/static/js/754.d0face4b.chunk.js",
@@ -14,8 +14,8 @@
     "service-worker.js": "/HappyBirthdayMLH-Project/service-worker.js",
     "index.html": "/HappyBirthdayMLH-Project/index.html",
     "main.74af1574.css.map": "/HappyBirthdayMLH-Project/static/css/main.74af1574.css.map",
-    "main.b6594009.js.map": "/HappyBirthdayMLH-Project/static/js/main.b6594009.js.map",
-    "90.2468b4f7.chunk.js.map": "/HappyBirthdayMLH-Project/static/js/90.2468b4f7.chunk.js.map",
+    "main.e4d2f963.js.map": "/HappyBirthdayMLH-Project/static/js/main.e4d2f963.js.map",
+    "90.6a306b0b.chunk.js.map": "/HappyBirthdayMLH-Project/static/js/90.6a306b0b.chunk.js.map",
     "453.5b2cf8ed.chunk.js.map": "/HappyBirthdayMLH-Project/static/js/453.5b2cf8ed.chunk.js.map",
     "625.6a5c65a2.chunk.js.map": "/HappyBirthdayMLH-Project/static/js/625.6a5c65a2.chunk.js.map",
     "754.d0face4b.chunk.js.map": "/HappyBirthdayMLH-Project/static/js/754.d0face4b.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.74af1574.css",
-    "static/js/main.b6594009.js"
+    "static/js/main.e4d2f963.js"
   ]
 }
